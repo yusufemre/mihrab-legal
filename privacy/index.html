@@ -15,7 +15,7 @@
         <p class="eyebrow">Privacy policy · Gizlilik politikası</p>
         <h1>Mihrab Privacy Policy</h1>
         <ul class="meta">
-          <li>Effective date / Yürürlük: July 12, 2026</li>
+          <li>Effective date / Yürürlük: July 16, 2026</li>
           <li>Publisher / Yayıncı: Vibe Coding Studios</li>
           <li>Contact / İletişim: vibecodingstudios@gmail.com</li>
         </ul>
@@ -32,13 +32,14 @@
             <li><strong>Local worship records:</strong> prayer check-ins, qada plans, streaks, tasbih counts, Quran reading progress, favorites and similar app activity.</li>
             <li><strong>Cached content:</strong> prayer calculations, Quran and hadith content, market prices and other data cached to improve speed and offline use.</li>
             <li><strong>Purchase records:</strong> product and transaction status supplied by Apple App Store or Google Play for optional, consumable support purchases. Mihrab does not receive payment-card details.</li>
+            <li><strong>Stability diagnostics:</strong> crash stack traces, non-fatal error reports, relevant app state, app version, device model, operating-system information, technical diagnostics and Firebase installation, session and Crashlytics identifiers.</li>
           </ul>
         </section>
 
         <section class="section">
           <h2>2. Location, qibla and nearby mosques</h2>
           <p>
-            Location is used to calculate prayer times and qibla, and to find nearby mosques when you request that feature. Mihrab does not use location for advertising or continuous movement tracking. You may select a city instead of granting location permission. Nearby-mosque searches may send coordinates or a selected city to OpenStreetMap services (Nominatim and Overpass). Choosing directions opens Apple Maps or another map application, whose own privacy terms then apply.
+            Location is used to calculate prayer times and qibla, resolve a city name, and find nearby mosques when you request that feature. Mihrab does not use location for advertising or continuous movement tracking. You may select a city instead of granting device-location permission. Depending on the requested feature, precise or approximate coordinates, or coordinates of a manually selected city, may be sent over HTTPS to AlAdhan, BigDataCloud, NOAA geomagnetic services, and OpenStreetMap Overpass services. Choosing directions opens Google Maps, Apple Maps or another installed map application, whose own privacy terms then apply.
           </p>
         </section>
 
@@ -69,12 +70,16 @@
         <section class="section">
           <h2>6. External content and data providers</h2>
           <ul>
+            <li><strong>AlAdhan:</strong> prayer-time and Hijri-date requests that may include coordinates, calculation method, school and date.</li>
+            <li><strong>BigDataCloud:</strong> reverse geocoding used to resolve a location into a locality or country.</li>
+            <li><strong>NOAA geomagnetic services:</strong> magnetic-declination information used to improve compass guidance.</li>
             <li><strong>AlQuran Cloud and Islamic Network CDN:</strong> Quran text, translations and audio.</li>
             <li><strong>Hadith API content distributed through jsDelivr/GitHub:</strong> hadith-library content.</li>
-            <li><strong>OpenStreetMap Nominatim and Overpass:</strong> nearby-mosque searches.</li>
+            <li><strong>OpenStreetMap Overpass:</strong> nearby-mosque searches.</li>
             <li><strong>Apple Maps or installed map providers:</strong> navigation requested by the user.</li>
-            <li><strong>finans.truncgil.com, Binance, Stooq and Metals.live:</strong> gold, silver and exchange reference data for informational zakat calculations.</li>
+            <li><strong>Gold API, Binance, GoldPrice.org, ExchangeRate-API and open.er-api.com:</strong> gold, silver and exchange reference data for informational zakat calculations.</li>
             <li><strong>Apple App Store and Google Play:</strong> optional in-app support purchases and store transaction processing.</li>
+            <li><strong>Google Firebase Crashlytics:</strong> crash reporting, non-fatal error reporting and app-stability diagnostics.</li>
           </ul>
           <p>
             Network requests expose normal technical data such as IP address, device network information, requested URL and request time to the relevant provider. Mihrab does not send prayer check-ins, qada records, tasbih history or Quran progress to these content providers.
@@ -82,16 +87,19 @@
         </section>
 
         <section class="section">
-          <h2>7. Advertising, analytics and tracking</h2>
+          <h2>7. Crash reporting, analytics and tracking</h2>
           <p>
-            The current Mihrab release contains no advertising network, no Firebase Analytics, no cross-app tracking SDK and no sale of personal information. Mihrab does not create behavioral advertising profiles. Store operators may provide aggregated installation, purchase and crash information under their own policies. If Mihrab later introduces analytics, advertising or account-based cloud services, this policy and store disclosures will be updated before release.
+            Mihrab uses Google Firebase Crashlytics to detect crashes, record selected non-fatal technical errors and improve app stability. Crashlytics may automatically process stack traces, relevant application state, app version, device manufacturer and model, operating-system version, memory or storage diagnostics, timestamps, network connection type, Firebase installation ID, Firebase session ID and Crashlytics installation UUID. Developer-defined error reports include a technical error context but are not intentionally populated with names, email addresses, worship records, precise location or user-entered religious content. Firebase Sessions may record technical session information such as when the app is brought to the foreground so crash-free and reliability metrics can be calculated.
+          </p>
+          <p>
+            Google processes Crashlytics data as a service provider on behalf of Vibe Coding Studios. The current Mihrab release contains no advertising network, no Firebase Analytics, no cross-app tracking SDK and no sale of personal information. Mihrab does not create behavioral advertising profiles. If Mihrab later introduces advertising, account-based cloud services or additional analytics, this policy and store disclosures will be updated before release.
           </p>
         </section>
 
         <section class="section">
           <h2>8. Storage, security and retention</h2>
           <p>
-            Local records are stored in the app's protected storage and iOS App Group container where widgets require access. Network requests use HTTPS. Local data remains until you clear it, reset the relevant feature or uninstall the app, subject to device backup and operating-system behavior. Cached remote content may be replaced when refreshed. Mihrab currently has no server-side user account or account-deletion database.
+            Local records are stored in the app's protected storage and iOS App Group container where widgets require access. Network requests use HTTPS. Local data remains until you clear it, reset the relevant feature or uninstall the app, subject to device backup and operating-system behavior. Cached remote content may be replaced when refreshed. Mihrab currently has no server-side user account or account-deletion database. Google states that Firebase Crashlytics keeps crash stack traces and associated identifiers for 90 days before beginning removal from live and backup systems. External providers may retain technical request logs under their own published policies.
           </p>
         </section>
 
@@ -124,7 +132,7 @@
         <section class="section" lang="tr">
           <h2>Türkçe özet</h2>
           <p>
-            Mihrab Android ve iOS'ta reklamsız, kullanıcı hesabı gerektirmeyen ve temel ibadet verilerini cihazda tutan bir uygulamadır. Konum izni namaz vakti, kıble ve isteğe bağlı yakındaki camiler için kullanılır; manuel şehir seçilebilir. Bildirimler cihazda planlanır. iOS widget'ları dil, tema, vakitler, günlük içerik ve tesbih sayacı gibi gerekli verileri Apple App Group üzerinden yalnızca cihaz içinde paylaşır. Kur'an, hadis, harita, piyasa verisi ve mağaza ödemeleri için yukarıda belirtilen sağlayıcılara gerekli ağ istekleri yapılabilir. Mihrab reklam, Firebase Analytics veya uygulamalar arası takip kullanmaz; ibadet geçmişini bu sağlayıcılara göndermez. Paylaşım görselleri yalnız kullanıcı paylaşmayı seçtiğinde cihaz dışına çıkar. Sorularınız için vibecodingstudios@gmail.com adresine yazabilirsiniz.
+            Mihrab Android ve iOS'ta reklamsız, kullanıcı hesabı gerektirmeyen ve temel ibadet verilerini cihazda tutan bir uygulamadır. Yaklaşık veya tam konum; namaz vakti, kıble, şehir çözümleme ve isteğe bağlı yakındaki camiler için kullanılır. İzin verilmiş cihaz koordinatları veya manuel seçilen şehrin koordinatları, ilgili özellik çalışırken AlAdhan, BigDataCloud, NOAA ve OpenStreetMap Overpass servislerine HTTPS üzerinden gönderilebilir. Bildirimler cihazda planlanır. iOS widget'ları dil, tema, vakitler, günlük içerik ve tesbih sayacı gibi gerekli verileri Apple App Group üzerinden yalnızca cihaz içinde paylaşır. Mihrab, uygulama çökmelerini ve teknik hataları incelemek için Firebase Crashlytics kullanır; kilitlenme günlükleri, teşhis bilgileri, teknik oturum bilgileri ve Firebase/Crashlytics kurulum kimlikleri Google tarafından Mihrab adına işlenebilir. İsteğe bağlı destek satın alımlarında mağaza işlem durumu işlenir ancak Mihrab ödeme kartı bilgilerini almaz. Mihrab reklam, Firebase Analytics veya uygulamalar arası takip kullanmaz; ibadet geçmişini bu sağlayıcılara göndermez. Paylaşım görselleri yalnız kullanıcı paylaşmayı seçtiğinde cihaz dışına çıkar. Sorularınız için vibecodingstudios@gmail.com adresine yazabilirsiniz.
           </p>
         </section>
 
