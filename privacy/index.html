@@ -16,6 +16,7 @@
         <h1>Mihrab Privacy Policy</h1>
         <ul class="meta">
           <li>Effective date / Yürürlük: July 16, 2026</li>
+          <li>Last updated / Son güncelleme: September 10, 2026 / 10 Eylül 2026</li>
           <li>Publisher / Yayıncı: Vibe Coding Studios</li>
           <li>Contact / İletişim: vibecodingstudios@gmail.com</li>
         </ul>
@@ -79,6 +80,8 @@
             <li><strong>Apple Maps or installed map providers:</strong> navigation requested by the user.</li>
             <li><strong>Gold API, Binance, GoldPrice.org, ExchangeRate-API and open.er-api.com:</strong> gold, silver and exchange reference data for informational zakat calculations.</li>
             <li><strong>Apple App Store and Google Play:</strong> optional in-app support purchases and store transaction processing.</li>
+            <li><strong>Google Firebase Authentication, Cloud Functions and Cloud Firestore:</strong> anonymous authentication and processing/storage for optional community and support features.</li>
+            <li><strong>Google Firebase Analytics:</strong> app usage measurements.</li>
             <li><strong>Google Firebase Crashlytics:</strong> crash reporting, non-fatal error reporting and app-stability diagnostics.</li>
           </ul>
           <p>
@@ -92,14 +95,14 @@
             Mihrab uses Google Firebase Crashlytics to detect crashes, record selected non-fatal technical errors and improve app stability. Crashlytics may automatically process stack traces, relevant application state, app version, device manufacturer and model, operating-system version, memory or storage diagnostics, timestamps, network connection type, Firebase installation ID, Firebase session ID and Crashlytics installation UUID. Developer-defined error reports include a technical error context but are not intentionally populated with names, email addresses, worship records, precise location or user-entered religious content. Firebase Sessions may record technical session information such as when the app is brought to the foreground so crash-free and reliability metrics can be calculated.
           </p>
           <p>
-            Google processes Crashlytics data as a service provider on behalf of Vibe Coding Studios. The current Mihrab release contains no advertising network, no Firebase Analytics, no cross-app tracking SDK and no sale of personal information. Mihrab does not create behavioral advertising profiles. If Mihrab later introduces advertising, account-based cloud services or additional analytics, this policy and store disclosures will be updated before release.
+            Google processes Crashlytics data as a service provider on behalf of Vibe Coding Studios. Mihrab also uses Firebase Analytics for app usage measurements, including screen views and feature interactions. Analytics and crash reporting are enabled by default and can be disabled through the analytics setting in Mihrab. The app contains no advertising network or cross-app tracking SDK and does not sell personal information. Mihrab does not create behavioral advertising profiles. Changes to these practices will be reflected in this policy and store disclosures.
           </p>
         </section>
 
         <section class="section">
           <h2>8. Storage, security and retention</h2>
           <p>
-            Local records are stored in the app's protected storage and iOS App Group container where widgets require access. Network requests use HTTPS. Local data remains until you clear it, reset the relevant feature or uninstall the app, subject to device backup and operating-system behavior. Cached remote content may be replaced when refreshed. Mihrab currently has no server-side user account or account-deletion database. Google states that Firebase Crashlytics keeps crash stack traces and associated identifiers for 90 days before beginning removal from live and backup systems. External providers may retain technical request logs under their own published policies.
+            Local records are stored in the app's protected storage and iOS App Group container where widgets require access. Network requests use HTTPS. Local data remains until you clear it, reset the relevant feature or uninstall the app, subject to device backup and operating-system behavior. Cached remote content may be replaced when refreshed. Core use does not require registration. Optional community and support features use Firebase anonymous authentication and store the records needed for those features on the server. Uninstalling the app does not itself delete these server records; feedback retention is described below. Google states that Firebase Crashlytics keeps crash stack traces and associated identifiers for 90 days before beginning removal from live and backup systems. External providers may retain technical request logs under their own published policies.
           </p>
         </section>
 
@@ -112,7 +115,7 @@
             <li>Remove local records by using available reset controls, clearing app data or uninstalling the app.</li>
             <li>Contact us to ask privacy questions or report an incorrect disclosure.</li>
           </ul>
-          <p>Because Mihrab does not maintain user accounts or a server-side worship-history database, we normally cannot identify or delete device-local data remotely.</p>
+          <p>We normally cannot identify or delete device-local records remotely. For questions about server-side community or feedback records, contact us at the email address above.</p>
         </section>
 
         <section class="section">
@@ -129,11 +132,29 @@
           </p>
         </section>
 
+
+        <section class="section" lang="en" id="feedback-en">
+          <h2>12. In-app feedback and support</h2>
+          <p>When you use Mihrab’s in-app contact channel, your message, message type, submission time, anonymous user ID, language, platform, app version, selected city, prayer-time calculation method and madhab setting are sent to our support team. Your madhab setting may reveal information about your religious beliefs. You may optionally provide an email address to receive a reply. Without an email address, we cannot reply to you directly.</p>
+          <p>Only problem reports include operating system information, notification permission status, quiet-hour settings and diagnostic records. You can inspect the complete attached diagnostic text in the app’s preview before sending it.</p>
+          <p>This information is processed using Google Firebase infrastructure to handle support requests, resolve technical problems and prevent abuse. Messages are not shown to other users and are not used for advertising or cross-app tracking.</p>
+          <p>Feedback becomes eligible for automatic deletion 180 days after submission. Separate rate-limit records become eligible for deletion 24 hours after the latest submission. Deletion usually completes within the following 24 hours. Using the feedback channel and providing an email address are optional.</p>
+        </section>
+
         <section class="section" lang="tr">
           <h2>Türkçe özet</h2>
           <p>
-            Mihrab Android ve iOS'ta reklamsız, kullanıcı hesabı gerektirmeyen ve temel ibadet verilerini cihazda tutan bir uygulamadır. Yaklaşık veya tam konum; namaz vakti, kıble, şehir çözümleme ve isteğe bağlı yakındaki camiler için kullanılır. İzin verilmiş cihaz koordinatları veya manuel seçilen şehrin koordinatları, ilgili özellik çalışırken AlAdhan, BigDataCloud, NOAA ve OpenStreetMap Overpass servislerine HTTPS üzerinden gönderilebilir. Bildirimler cihazda planlanır. iOS widget'ları dil, tema, vakitler, günlük içerik ve tesbih sayacı gibi gerekli verileri Apple App Group üzerinden yalnızca cihaz içinde paylaşır. Mihrab, uygulama çökmelerini ve teknik hataları incelemek için Firebase Crashlytics kullanır; kilitlenme günlükleri, teşhis bilgileri, teknik oturum bilgileri ve Firebase/Crashlytics kurulum kimlikleri Google tarafından Mihrab adına işlenebilir. İsteğe bağlı destek satın alımlarında mağaza işlem durumu işlenir ancak Mihrab ödeme kartı bilgilerini almaz. Mihrab reklam, Firebase Analytics veya uygulamalar arası takip kullanmaz; ibadet geçmişini bu sağlayıcılara göndermez. Paylaşım görselleri yalnız kullanıcı paylaşmayı seçtiğinde cihaz dışına çıkar. Sorularınız için vibecodingstudios@gmail.com adresine yazabilirsiniz.
+            Mihrab Android ve iOS'ta reklamsız, kullanıcı hesabı gerektirmeyen ve temel ibadet verilerini cihazda tutan bir uygulamadır. Yaklaşık veya tam konum; namaz vakti, kıble, şehir çözümleme ve isteğe bağlı yakındaki camiler için kullanılır. İzin verilmiş cihaz koordinatları veya manuel seçilen şehrin koordinatları, ilgili özellik çalışırken AlAdhan, BigDataCloud, NOAA ve OpenStreetMap Overpass servislerine HTTPS üzerinden gönderilebilir. Bildirimler cihazda planlanır. iOS widget'ları dil, tema, vakitler, günlük içerik ve tesbih sayacı gibi gerekli verileri Apple App Group üzerinden yalnızca cihaz içinde paylaşır. Mihrab, uygulama çökmelerini ve teknik hataları incelemek için Firebase Crashlytics kullanır; kilitlenme günlükleri, teşhis bilgileri, teknik oturum bilgileri ve Firebase/Crashlytics kurulum kimlikleri Google tarafından Mihrab adına işlenebilir. İsteğe bağlı destek satın alımlarında mağaza işlem durumu işlenir ancak Mihrab ödeme kartı bilgilerini almaz. Mihrab ekran görüntülemeleri ve özellik etkileşimleri gibi kullanım ölçümleri için Firebase Analytics kullanır. Analiz ve hata raporlama varsayılan olarak açıktır ve uygulamadaki analiz ayarından kapatılabilir. Reklam veya uygulamalar arası takip kullanılmaz. İsteğe bağlı topluluk ve destek özellikleri anonim Firebase kimliği kullanır; bu özelliklerin gerektirdiği kayıtlar sunucuda saklanır. Paylaşım görselleri yalnız kullanıcı paylaşmayı seçtiğinde cihaz dışına çıkar. Sorularınız için vibecodingstudios@gmail.com adresine yazabilirsiniz.
           </p>
+        </section>
+
+
+        <section class="section" lang="tr" id="feedback-tr">
+          <h2>Uygulama içi geri bildirim ve destek</h2>
+          <p>Mihrab’ın uygulama içi iletişim kanalını kullandığınızda mesajınız, mesaj türü, gönderim zamanı, anonim kullanıcı kimliğiniz, diliniz, platformunuz, uygulama sürümünüz, seçili şehriniz, namaz vakti hesaplama yönteminiz ve mezhep ayarınız destek ekibimize iletilir. Mezhep ayarı dini inancınızla ilişkili bilgi içerebilir. Yanıt almak için isteğe bağlı olarak e-posta adresinizi ekleyebilirsiniz. E-posta paylaşmazsanız size doğrudan yanıt veremeyiz.</p>
+          <p>Yalnızca sorun bildirimlerine işletim sistemi bilgisi, bildirim izni durumu, sessiz saat ayarları ve tanılama kayıtları eklenir. Göndermeden önce eklenen tanılama metninin tamamını uygulamadaki önizlemeden inceleyebilirsiniz.</p>
+          <p>Bu bilgiler Google Firebase altyapısında, destek taleplerini ele almak, teknik sorunları çözmek ve kötüye kullanımı önlemek amacıyla işlenir. Mesajlar diğer kullanıcılara gösterilmez; reklam veya uygulamalar arası takip amacıyla kullanılmaz.</p>
+          <p>Geri bildirimler gönderimden 180 gün sonra, ayrı hız sınırı kayıtları ise son gönderimden 24 saat sonra otomatik silinmeye uygun hale gelir. Silme işlemi genellikle takip eden 24 saat içinde tamamlanır. Geri bildirim kanalını kullanmak ve e-posta paylaşmak isteğe bağlıdır.</p>
         </section>
 
         <p class="note">Prayer times, qibla, religious references and zakat calculations are informational and should be checked against trusted local authorities when exact guidance matters.</p>
