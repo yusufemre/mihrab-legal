@@ -16,7 +16,7 @@
         <h1>Mihrab Privacy Policy</h1>
         <ul class="meta">
           <li>Effective date / Yürürlük: July 16, 2026</li>
-          <li>Last updated / Son güncelleme: September 10, 2026 / 10 Eylül 2026</li>
+          <li>Last updated / Son güncelleme: September 15, 2026 / 15 Eylül 2026</li>
           <li>Publisher / Yayıncı: Vibe Coding Studios</li>
           <li>Contact / İletişim: vibecodingstudios@gmail.com</li>
         </ul>
@@ -32,7 +32,8 @@
             <li><strong>Preferences:</strong> language, theme, city, madhab, calculation method, time format, notification choices and widget configuration.</li>
             <li><strong>Local worship records:</strong> prayer check-ins, qada plans, streaks, tasbih counts, Quran reading progress, favorites and similar app activity.</li>
             <li><strong>Cached content:</strong> prayer calculations, Quran and hadith content, market prices and other data cached to improve speed and offline use.</li>
-            <li><strong>Purchase records:</strong> product and transaction status supplied by Apple App Store or Google Play for optional, consumable support purchases. Mihrab does not receive payment-card details.</li>
+            <li><strong>Purchase records:</strong> product and transaction status supplied by Apple App Store or Google Play for optional support purchases and Mihrab Plus. Mihrab does not receive payment-card details. Plus purchases are verified on our server as described in section 13.</li>
+            <li><strong>Encrypted cloud backup (optional):</strong> worship records and settings you choose to back up, encrypted on your device before upload, together with limited technical metadata described in section 14.</li>
             <li><strong>Stability diagnostics:</strong> crash stack traces, non-fatal error reports, relevant app state, app version, device model, operating-system information, technical diagnostics and Firebase installation, session and Crashlytics identifiers.</li>
           </ul>
         </section>
@@ -79,8 +80,8 @@
             <li><strong>OpenStreetMap Overpass:</strong> nearby-mosque searches.</li>
             <li><strong>Apple Maps or installed map providers:</strong> navigation requested by the user.</li>
             <li><strong>Gold API, Binance, GoldPrice.org, ExchangeRate-API and open.er-api.com:</strong> gold, silver and exchange reference data for informational zakat calculations.</li>
-            <li><strong>Apple App Store and Google Play:</strong> optional in-app support purchases and store transaction processing.</li>
-            <li><strong>Google Firebase Authentication, Cloud Functions and Cloud Firestore:</strong> anonymous authentication and processing/storage for optional community and support features.</li>
+            <li><strong>Apple App Store and Google Play:</strong> optional in-app support purchases, Mihrab Plus subscriptions and one-time purchases, and store transaction processing.</li>
+            <li><strong>Google Firebase Authentication, Cloud Functions, Cloud Firestore and App Check:</strong> anonymous authentication, request integrity checks, and processing/storage for optional community, support, Mihrab Plus verification and encrypted cloud backup features (europe-west3, Frankfurt).</li>
             <li><strong>Google Firebase Analytics:</strong> app usage measurements.</li>
             <li><strong>Google Firebase Crashlytics:</strong> crash reporting, non-fatal error reporting and app-stability diagnostics.</li>
           </ul>
@@ -113,7 +114,9 @@
             <li>Change or revoke location and notification permissions in system settings.</li>
             <li>Enable or disable prayer and spiritual reminders inside Mihrab.</li>
             <li>Remove local records by using available reset controls, clearing app data or uninstalling the app.</li>
-            <li>Contact us to ask privacy questions or report an incorrect disclosure.</li>
+            <li>Delete your encrypted cloud backup at any time in the app (Settings → Cloud backup → More options → Delete cloud backup).</li>
+            <li>Manage or cancel a Mihrab Plus subscription in your App Store or Google Play account settings.</li>
+            <li>Contact us to ask privacy questions, request deletion of server-side records or report an incorrect disclosure (see section 15).</li>
           </ul>
           <p>We normally cannot identify or delete device-local records remotely. For questions about server-side community or feedback records, contact us at the email address above.</p>
         </section>
@@ -141,10 +144,28 @@
           <p>Feedback becomes eligible for automatic deletion 180 days after submission. Separate rate-limit records become eligible for deletion 24 hours after the latest submission. Deletion usually completes within the following 24 hours. Using the feedback channel and providing an email address are optional.</p>
         </section>
 
+        <section class="section" lang="en" id="plus-en">
+          <h2>13. Mihrab Plus</h2>
+          <p>Mihrab Plus is optional. Purchases are made through the Apple App Store or Google Play; we never see your payment details. To verify your purchase, the purchase record issued by the store is sent to our Firebase server in Frankfurt (europe-west3) and checked with Apple or Google. The server stores the product, subscription status, expiry date, a one-way digest of the purchase identifier and up to two technical (anonymous) user identifiers linked to the purchase, so the purchase can be recognised on your devices. These records are kept while the purchase is relevant to the service and are not used for advertising.</p>
+          <p>You can manage or cancel your subscription in your store account settings. Deleting the app does not cancel a subscription.</p>
+        </section>
+
+        <section class="section" lang="en" id="cloud-backup-en">
+          <h2>14. Encrypted cloud backup</h2>
+          <p>Cloud backup is optional and requires separate consent in the app. Your selected data (such as settings, prayer and qada records, tasbih, personal Quran progress, fasting, hadith favorites, commitment archives and catalogue cities) is encrypted on your phone before it is uploaded. The key that opens it exists only in your recovery code, which stays with you; we cannot read the content. Custom or GPS locations, account and group memberships, Plus entitlements and device permissions are not included.</p>
+          <p>The encrypted backup is stored in Google Firebase in the Frankfurt (europe-west3) region. The server can see the backup time, approximate size, a backup identifier, a technical user identifier and the purchase it is linked to. The infrastructure provider may process your IP address in request logs. The latest backup is kept until you delete it. When you delete it, the live content is removed; the infrastructure provider's technical backup copies may remain for a limited period, and a deletion record without any content is kept so the backup cannot be restored by mistake.</p>
+          <p>If you lose your recovery code and the phone that stored it, neither you nor we can open the backup, and we cannot delete it on your behalf without proof that you own it.</p>
+        </section>
+
+        <section class="section" lang="en" id="data-deletion-en">
+          <h2>15. Deleting your data</h2>
+          <p>Mihrab does not require an account. Worship records stay on your phone and are removed when you clear the app's data or uninstall it. You can delete your cloud backup at any time in the app under Settings → Cloud backup → More options → Delete cloud backup. To request deletion of other server-side records (Plus verification records, feedback, dua requests or community records), or if you lost your recovery code, email <a href="mailto:vibecodingstudios@gmail.com">vibecodingstudios@gmail.com</a>. We respond within 30 days.</p>
+        </section>
+
         <section class="section" lang="tr">
           <h2>Türkçe özet</h2>
           <p>
-            Mihrab Android ve iOS'ta reklamsız, kullanıcı hesabı gerektirmeyen ve temel ibadet verilerini cihazda tutan bir uygulamadır. Yaklaşık veya tam konum; namaz vakti, kıble, şehir çözümleme ve isteğe bağlı yakındaki camiler için kullanılır. İzin verilmiş cihaz koordinatları veya manuel seçilen şehrin koordinatları, ilgili özellik çalışırken AlAdhan, BigDataCloud, NOAA ve OpenStreetMap Overpass servislerine HTTPS üzerinden gönderilebilir. Bildirimler cihazda planlanır. iOS widget'ları dil, tema, vakitler, günlük içerik ve tesbih sayacı gibi gerekli verileri Apple App Group üzerinden yalnızca cihaz içinde paylaşır. Mihrab, uygulama çökmelerini ve teknik hataları incelemek için Firebase Crashlytics kullanır; kilitlenme günlükleri, teşhis bilgileri, teknik oturum bilgileri ve Firebase/Crashlytics kurulum kimlikleri Google tarafından Mihrab adına işlenebilir. İsteğe bağlı destek satın alımlarında mağaza işlem durumu işlenir ancak Mihrab ödeme kartı bilgilerini almaz. Mihrab ekran görüntülemeleri ve özellik etkileşimleri gibi kullanım ölçümleri için Firebase Analytics kullanır. Analiz ve hata raporlama varsayılan olarak açıktır ve uygulamadaki analiz ayarından kapatılabilir. Reklam veya uygulamalar arası takip kullanılmaz. İsteğe bağlı topluluk ve destek özellikleri anonim Firebase kimliği kullanır; bu özelliklerin gerektirdiği kayıtlar sunucuda saklanır. Paylaşım görselleri yalnız kullanıcı paylaşmayı seçtiğinde cihaz dışına çıkar. Sorularınız için vibecodingstudios@gmail.com adresine yazabilirsiniz.
+            Mihrab Android ve iOS'ta reklamsız, kullanıcı hesabı gerektirmeyen ve temel ibadet verilerini cihazda tutan bir uygulamadır. Yaklaşık veya tam konum; namaz vakti, kıble, şehir çözümleme ve isteğe bağlı yakındaki camiler için kullanılır. İzin verilmiş cihaz koordinatları veya manuel seçilen şehrin koordinatları, ilgili özellik çalışırken AlAdhan, BigDataCloud, NOAA ve OpenStreetMap Overpass servislerine HTTPS üzerinden gönderilebilir. Bildirimler cihazda planlanır. iOS widget'ları dil, tema, vakitler, günlük içerik ve tesbih sayacı gibi gerekli verileri Apple App Group üzerinden yalnızca cihaz içinde paylaşır. Mihrab, uygulama çökmelerini ve teknik hataları incelemek için Firebase Crashlytics kullanır; kilitlenme günlükleri, teşhis bilgileri, teknik oturum bilgileri ve Firebase/Crashlytics kurulum kimlikleri Google tarafından Mihrab adına işlenebilir. İsteğe bağlı destek satın alımlarında ve Mihrab Plus’ta mağaza işlem durumu işlenir ancak Mihrab ödeme kartı bilgilerini almaz. Mihrab ekran görüntülemeleri ve özellik etkileşimleri gibi kullanım ölçümleri için Firebase Analytics kullanır. Analiz ve hata raporlama varsayılan olarak açıktır ve uygulamadaki analiz ayarından kapatılabilir. Reklam veya uygulamalar arası takip kullanılmaz. İsteğe bağlı topluluk ve destek özellikleri anonim Firebase kimliği kullanır; bu özelliklerin gerektirdiği kayıtlar sunucuda saklanır. Paylaşım görselleri yalnız kullanıcı paylaşmayı seçtiğinde cihaz dışına çıkar. Sorularınız için vibecodingstudios@gmail.com adresine yazabilirsiniz.
           </p>
         </section>
 
@@ -155,6 +176,22 @@
           <p>Yalnızca sorun bildirimlerine seçili şehir, namaz vakti hesaplama yöntemi, işletim sistemi bilgisi, bildirim izni durumu, sessiz saat ayarları ve tanılama kayıtları eklenir. Göndermeden önce eklenen tanılama metninin tamamını uygulamadaki önizlemeden inceleyebilirsiniz.</p>
           <p>Bu bilgiler Google Firebase altyapısında, destek taleplerini ele almak, teknik sorunları çözmek ve kötüye kullanımı önlemek amacıyla işlenir. Mesajlar diğer kullanıcılara gösterilmez; reklam veya uygulamalar arası takip amacıyla kullanılmaz.</p>
           <p>Geri bildirimler gönderimden 180 gün sonra, ayrı hız sınırı kayıtları ise son gönderimden 24 saat sonra otomatik silinmeye uygun hale gelir. Silme işlemi genellikle takip eden 24 saat içinde tamamlanır. Geri bildirim kanalını kullanmak ve e-posta paylaşmak isteğe bağlıdır.</p>
+        </section>
+
+        <section class="section" lang="tr" id="plus-tr">
+          <h2>Mihrab Plus</h2>
+          <p>Plus isteğe bağlıdır. Satın alma App Store veya Google Play üzerinden yapılır; ödeme bilgilerinizi görmeyiz. Satın almanızı doğrulamak için mağazanın verdiği satın alma kaydı Frankfurt’taki (europe-west3) Firebase sunucumuza gönderilir ve Apple ya da Google ile kontrol edilir. Sunucu ürünü, abonelik durumunu, bitiş tarihini, satın alma kimliğinin tek yönlü özetini ve bu satın almaya bağlı en fazla iki teknik (anonim) kullanıcı kimliğini saklar. Bu kayıtlar reklam için kullanılmaz. Aboneliğinizi mağazanın hesap ayarlarından yönetip iptal edebilirsiniz; uygulamayı silmek aboneliği iptal etmez.</p>
+        </section>
+
+        <section class="section" lang="tr" id="cloud-backup-tr">
+          <h2>Şifreli bulut yedeği</h2>
+          <p>Bulut yedekleme isteğe bağlıdır ve uygulamada ayrıca onay ister. Seçtiğiniz veriler (ayarlar, namaz ve kaza kayıtları, tesbih, kişisel Kur’an ilerlemesi, oruç, hadis favorileri, taahhüt arşivleri ve katalog şehirleri) yüklenmeden önce telefonunuzda şifrelenir. Açan anahtar yalnızca sizde kalan kurtarma kodundadır; içeriği biz okuyamayız. Özel veya GPS konumları, hesap ve grup üyelikleri, Plus hakkı ve cihaz izinleri yedeğe girmez.</p>
+          <p>Şifreli yedek Google Firebase’de, Frankfurt (europe-west3) bölgesinde saklanır. Sunucu yedek zamanını, yaklaşık boyutu, yedek kimliğini, teknik kullanıcı kimliğini ve bağlı olduğu satın almayı görebilir; altyapı sağlayıcısı istek kayıtlarında IP adresini işleyebilir. Son yedek siz silene kadar tutulur. Sildiğinizde canlı içerik kaldırılır; altyapı sağlayıcısının teknik yedek kopyaları sınırlı bir süre kalabilir ve yedeğin yanlışlıkla geri gelmemesi için içerik barındırmayan bir silme kaydı saklanır. Kurtarma kodunu ve kodun kayıtlı olduğu telefonu kaybederseniz yedeği ne siz ne biz açabiliriz.</p>
+        </section>
+
+        <section class="section" lang="tr" id="data-deletion-tr">
+          <h2>Verilerinizi silme</h2>
+          <p>Mihrab hesap açtırmaz; ibadet kayıtlarınız telefonunuzda durur ve uygulama verisini temizlediğinizde ya da uygulamayı sildiğinizde kaldırılır. Bulut yedeğinizi uygulamada Ayarlar → Bulut yedeği → Diğer seçenekler → “Bulut yedeğini sil” ile istediğiniz zaman silebilirsiniz. Diğer sunucu kayıtlarının (Plus doğrulama kaydı, geri bildirim, dua isteği veya topluluk kayıtları) silinmesini istiyorsanız ya da kurtarma kodunuzu kaybettiyseniz <a href="mailto:vibecodingstudios@gmail.com">vibecodingstudios@gmail.com</a> adresine yazın; talebiniz 30 gün içinde yanıtlanır.</p>
         </section>
 
         <p class="note">Prayer times, qibla, religious references and zakat calculations are informational and should be checked against trusted local authorities when exact guidance matters.</p>
